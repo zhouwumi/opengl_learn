@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="..\math\CMakeLists.txt">
+      <Filter>math</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="glfw">
+      <UniqueIdentifier>{41c398b2-d508-4762-9b27-cbe7d03a6657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{a4a5af9a-04ad-4c84-a3ef-1a69ba3cd4d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{dfe682a2-ef23-4033-9470-beb99983d031}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glew">
+      <UniqueIdentifier>{aa2271f1-ed70-4451-9166-c3153c6fde12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{323b0668-65ff-4d36-a348-ff6cd2fc449b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render">
+      <UniqueIdentifier>{10ed158d-86b5-4b2c-969a-403121f5ac38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unzip">
+      <UniqueIdentifier>{8df4b325-95a5-43f3-bd85-9b43cec74558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zlib">
+      <UniqueIdentifier>{e6e122c3-c4d5-4b7a-9c9e-00c8ae2d5e8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="parse">
+      <UniqueIdentifier>{afdcf27a-fbe5-44a8-825c-7b35c63cc061}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="image">
+      <UniqueIdentifier>{d0f5bdaa-e526-4206-85d0-81cc46b9feac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2d">
+      <UniqueIdentifier>{6451e62f-7b28-483f-9c35-9ae74c28a76e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\glfw3\glfw3.h">
+      <Filter>glfw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\glfw3\glfw3native.h">
+      <Filter>glfw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\GLView.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\glew\GL\glew.h">
+      <Filter>glew</Filter>
+    </ClInclude>
+    <ClInclude Include="..\glew\GL\glxew.h">
+      <Filter>glew</Filter>
+    </ClInclude>
+    <ClInclude Include="..\glew\GL\wglew.h">
+      <Filter>glew</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\ccTypes.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\CCStdC.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\CommonMacros.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\PlatformMacros.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\CCAffineTransform.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\CCGeometry.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\CCMath.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\CCMathBase.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\CCVertex.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\Mat4.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\MathUtil.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\Quaternion.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\TransformUtils.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\Vec2.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\Vec3.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\math\Vec4.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\CommonUtil.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\GLProgram.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\QuadCommand.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\Render.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\CCImage.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\CCValue.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\Data.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\FileUtils.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\ZipUtils.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\CCTexture2D.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\unzip\crypt.h">
+      <Filter>unzip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\unzip\ioapi.h">
+      <Filter>unzip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\unzip\ioapi_mem.h">
+      <Filter>unzip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\unzip\unzip.h">
+      <Filter>unzip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\include\zconf.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\include\zlib.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\parse\CCRapidMaker.h">
+      <Filter>parse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\parse\CCRapidParser.h">
+      <Filter>parse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\parse\CCSAXParser.h">
+      <Filter>parse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\parse\tinyxml2\tinyxml2.h">
+      <Filter>parse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\parse\rapid\rapidxml.hpp">
+      <Filter>parse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\parse\rapid\rapidxml_iterators.hpp">
+      <Filter>parse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\parse\rapid\rapidxml_print.hpp">
+      <Filter>parse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\parse\rapid\rapidxml_utils.hpp">
+      <Filter>parse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\image\atitc\atitc.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\image\etc\etc1.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\image\jpeg\jconfig.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\image\jpeg\jmorecfg.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\image\jpeg\jpeglib.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\image\png\include\png.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\image\png\include\pngconf.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\image\png\include\pnglibconf.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\image\pvr\pvr.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\image\s3tc\s3tc.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\image\TGAlib\TGAlib.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\Sprite.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\Director.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\ccGLStateManager.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\CustomCommand.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\RenderTexture.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\ClippingNode.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\2d\DrawNode.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\GLView.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\CCAffineTransform.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\CCGeometry.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\CCVertex.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\Mat4.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\MathUtil.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\Quaternion.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\TransformUtils.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\Vec2.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\Vec3.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\math\Vec4.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\ccType.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\CommonUtil.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\GLProgram.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\QuadCommand.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\Render.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\CCImage.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\CCValue.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\Data.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\FileUtils.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\ZipUtils.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\CCTexture2D.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\unzip\ioapi.cpp">
+      <Filter>unzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\unzip\ioapi_mem.cpp">
+      <Filter>unzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\unzip\unzip.cpp">
+      <Filter>unzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\parse\CCRapidMaker.cpp">
+      <Filter>parse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\parse\CCRapidParser.cpp">
+      <Filter>parse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\parse\CCSAXParser.cpp">
+      <Filter>parse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\parse\tinyxml2\tinyxml2.cpp">
+      <Filter>parse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\image\atitc\atitc.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\image\etc\etc1.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\image\pvr\pvr.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\image\s3tc\s3tc.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\image\TGAlib\TGAlib.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\Sprite.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\Director.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\ccGLStateManager.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\CustomCommand.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\RenderTexture.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\ClippingNode.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\2d\DrawNode.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\math\Mat4.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="..\math\MathUtil.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="..\math\Quaternion.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="..\math\Vec2.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="..\math\Vec3.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="..\math\Vec4.inl">
+      <Filter>math</Filter>
+    </None>
+  </ItemGroup>
+</Project>

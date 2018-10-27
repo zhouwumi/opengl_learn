@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BD4BA310-9CA4-45EF-9A88-B2E1128E52A2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CreateWindow</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)glfw3;$(SolutionDir)base;$(SolutionDir)glew\GL;$(SolutionDir)glew;$(SolutionDir)math;$(SolutionDir);$(SolutionDir)parse\tinyxml2;$(SolutionDir)parse\rapid;$(SolutionDir)parse;$(SolutionDir)unzip;$(SolutionDir)zlib\include;$(SolutionDir)image\png\include;$(SolutionDir)image\jpeg;$(SolutionDir)image\etc;$(SolutionDir)image\atitc;$(SolutionDir)image\pvr;$(SolutionDir)image\s3tc;$(SolutionDir)image\TGAlib</AdditionalIncludeDirectories>
+      <AdditionalOptions>/wd4403 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;glfw3.lib;opengl32.lib;libzlib.lib;libjpeg.lib;libpng.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="..\math\CMakeLists.txt" />
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\2d\DrawNode.h" />
+    <ClInclude Include="..\base\CCImage.h" />
+    <ClInclude Include="..\base\CCStdC.h" />
+    <ClInclude Include="..\base\ccTypes.h" />
+    <ClInclude Include="..\base\CCValue.h" />
+    <ClInclude Include="..\base\ClippingNode.h" />
+    <ClInclude Include="..\base\CommonMacros.h" />
+    <ClInclude Include="..\base\CommonUtil.h" />
+    <ClInclude Include="..\base\Data.h" />
+    <ClInclude Include="..\base\Director.h" />
+    <ClInclude Include="..\base\FileUtils.h" />
+    <ClInclude Include="..\base\GLView.h" />
+    <ClInclude Include="..\base\PlatformMacros.h" />
+    <ClInclude Include="..\base\Sprite.h" />
+    <ClInclude Include="..\base\ZipUtils.h" />
+    <ClInclude Include="..\glew\GL\glew.h" />
+    <ClInclude Include="..\glew\GL\glxew.h" />
+    <ClInclude Include="..\glew\GL\wglew.h" />
+    <ClInclude Include="..\glfw3\glfw3.h" />
+    <ClInclude Include="..\glfw3\glfw3native.h" />
+    <ClInclude Include="..\image\atitc\atitc.h" />
+    <ClInclude Include="..\image\etc\etc1.h" />
+    <ClInclude Include="..\image\jpeg\jconfig.h" />
+    <ClInclude Include="..\image\jpeg\jmorecfg.h" />
+    <ClInclude Include="..\image\jpeg\jpeglib.h" />
+    <ClInclude Include="..\image\png\include\png.h" />
+    <ClInclude Include="..\image\png\include\pngconf.h" />
+    <ClInclude Include="..\image\png\include\pnglibconf.h" />
+    <ClInclude Include="..\image\pvr\pvr.h" />
+    <ClInclude Include="..\image\s3tc\s3tc.h" />
+    <ClInclude Include="..\image\TGAlib\TGAlib.h" />
+    <ClInclude Include="..\math\CCAffineTransform.h" />
+    <ClInclude Include="..\math\CCGeometry.h" />
+    <ClInclude Include="..\math\CCMath.h" />
+    <ClInclude Include="..\math\CCMathBase.h" />
+    <ClInclude Include="..\math\CCVertex.h" />
+    <ClInclude Include="..\math\Mat4.h" />
+    <ClInclude Include="..\math\MathUtil.h" />
+    <ClInclude Include="..\math\Quaternion.h" />
+    <ClInclude Include="..\math\TransformUtils.h" />
+    <ClInclude Include="..\math\Vec2.h" />
+    <ClInclude Include="..\math\Vec3.h" />
+    <ClInclude Include="..\math\Vec4.h" />
+    <ClInclude Include="..\parse\CCRapidMaker.h" />
+    <ClInclude Include="..\parse\CCRapidParser.h" />
+    <ClInclude Include="..\parse\CCSAXParser.h" />
+    <ClInclude Include="..\parse\rapid\rapidxml.hpp" />
+    <ClInclude Include="..\parse\rapid\rapidxml_iterators.hpp" />
+    <ClInclude Include="..\parse\rapid\rapidxml_print.hpp" />
+    <ClInclude Include="..\parse\rapid\rapidxml_utils.hpp" />
+    <ClInclude Include="..\parse\tinyxml2\tinyxml2.h" />
+    <ClInclude Include="..\render\ccGLStateManager.h" />
+    <ClInclude Include="..\render\CCTexture2D.h" />
+    <ClInclude Include="..\render\CustomCommand.h" />
+    <ClInclude Include="..\render\GLProgram.h" />
+    <ClInclude Include="..\render\QuadCommand.h" />
+    <ClInclude Include="..\render\Render.h" />
+    <ClInclude Include="..\render\RenderTexture.h" />
+    <ClInclude Include="..\unzip\crypt.h" />
+    <ClInclude Include="..\unzip\ioapi.h" />
+    <ClInclude Include="..\unzip\ioapi_mem.h" />
+    <ClInclude Include="..\unzip\unzip.h" />
+    <ClInclude Include="..\zlib\include\zconf.h" />
+    <ClInclude Include="..\zlib\include\zlib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\2d\DrawNode.cpp" />
+    <ClCompile Include="..\base\CCImage.cpp" />
+    <ClCompile Include="..\base\CCValue.cpp" />
+    <ClCompile Include="..\base\ClippingNode.cpp" />
+    <ClCompile Include="..\base\CommonUtil.cpp" />
+    <ClCompile Include="..\base\Data.cpp" />
+    <ClCompile Include="..\base\Director.cpp" />
+    <ClCompile Include="..\base\FileUtils.cpp" />
+    <ClCompile Include="..\base\GLView.cpp" />
+    <ClCompile Include="..\base\ccType.cpp" />
+    <ClCompile Include="..\base\Sprite.cpp" />
+    <ClCompile Include="..\base\ZipUtils.cpp" />
+    <ClCompile Include="..\image\atitc\atitc.cpp" />
+    <ClCompile Include="..\image\etc\etc1.cpp" />
+    <ClCompile Include="..\image\pvr\pvr.cpp" />
+    <ClCompile Include="..\image\s3tc\s3tc.cpp" />
+    <ClCompile Include="..\image\TGAlib\TGAlib.cpp" />
+    <ClCompile Include="..\math\CCAffineTransform.cpp" />
+    <ClCompile Include="..\math\CCGeometry.cpp" />
+    <ClCompile Include="..\math\CCVertex.cpp" />
+    <ClCompile Include="..\math\Mat4.cpp" />
+    <ClCompile Include="..\math\MathUtil.cpp" />
+    <ClCompile Include="..\math\Quaternion.cpp" />
+    <ClCompile Include="..\math\TransformUtils.cpp" />
+    <ClCompile Include="..\math\Vec2.cpp" />
+    <ClCompile Include="..\math\Vec3.cpp" />
+    <ClCompile Include="..\math\Vec4.cpp" />
+    <ClCompile Include="..\parse\CCRapidMaker.cpp" />
+    <ClCompile Include="..\parse\CCRapidParser.cpp" />
+    <ClCompile Include="..\parse\CCSAXParser.cpp" />
+    <ClCompile Include="..\parse\tinyxml2\tinyxml2.cpp" />
+    <ClCompile Include="..\render\ccGLStateManager.cpp" />
+    <ClCompile Include="..\render\CCTexture2D.cpp" />
+    <ClCompile Include="..\render\CustomCommand.cpp" />
+    <ClCompile Include="..\render\GLProgram.cpp" />
+    <ClCompile Include="..\render\QuadCommand.cpp" />
+    <ClCompile Include="..\render\Render.cpp" />
+    <ClCompile Include="..\render\RenderTexture.cpp" />
+    <ClCompile Include="..\unzip\ioapi.cpp" />
+    <ClCompile Include="..\unzip\ioapi_mem.cpp" />
+    <ClCompile Include="..\unzip\unzip.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\math\Mat4.inl" />
+    <None Include="..\math\MathUtil.inl" />
+    <None Include="..\math\Quaternion.inl" />
+    <None Include="..\math\Vec2.inl" />
+    <None Include="..\math\Vec3.inl" />
+    <None Include="..\math\Vec4.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
